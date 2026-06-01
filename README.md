@@ -147,13 +147,6 @@ graph TB
 
 ### Documentation
 - [Prerequisites & Setup](prerequisites.md) - Detailed setup instructions
-- [Architecture Overview](ARCHITECTURE.md) - Technical architecture details
-- [Visual Overview](LAB_OVERVIEW.md) - Diagrams and visual guides
-
-### Reference Guides
-- [Bob Features Guide](resources/bob-features-guide.md) - Quick reference
-- [MCP Servers Guide](resources/mcp-servers-guide.md) - MCP integration
-- [Troubleshooting](resources/troubleshooting.md) - Common issues
 
 ### Support
 - Bob Documentation - Official docs
