@@ -219,6 +219,5 @@ Now that you're familiar with Bob's core features, you're ready to tackle the ma
 
 - **Lab 1**: Full-stack development with Flask and vanilla JavaScript - Build a complete todo application
 - **Lab 2**: IBM i Modernization with Bob - Six hands-on labs covering RPG conversion, UI modernization, SQL refactoring, MCP integration, and Ansible automation
-- **Lab 3**: Creating MCP Servers and Custom Modes - Advanced lab on extending Bob's capabilities through Model Context Protocol
 
 Happy coding! 🚀

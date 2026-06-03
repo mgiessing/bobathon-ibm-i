@@ -144,16 +144,6 @@ git --version
 # Should output: git version 2.x.x or higher
 ```
 
-#### Git Configuration
-```bash
-# Set your name and email
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-
-# Verify configuration
-git config --list
-```
-
 ### 4. Bob
 
 Bob is the AI-powered development assistant used throughout all labs.
@@ -205,7 +195,7 @@ docker info
    - Verify connection
 
 2. **Configure Settings**
-   - Set preferred mode (Architect/Code/Ask)
+   - Set preferred mode (Plan/Code/Ask)
    - Configure auto-approvals (optional)
    - Set up workspace preferences
 
@@ -213,125 +203,6 @@ docker info
    - Open Bob chat
    - Try a simple query: "Hello, can you help me?"
    - Verify Bob responds
-
-### 5. Text Editor or IDE
-
-A code editor is required for viewing and editing files.
-
-#### Recommended: Visual Studio Code
-
-**Why VS Code?**
-- Excellent Bob integration
-- Built-in terminal
-- Git integration
-- Python and JavaScript support
-- Free and open source
-
-**Installation:**
-1. Download from [code.visualstudio.com](https://code.visualstudio.com/)
-2. Install with default settings
-3. Install recommended extensions:
-   - Python (Microsoft)
-   - JavaScript (ES6) code snippets
-   - GitLens
-   - Bob extension (if available)
-
-**Alternative Editors:**
-- PyCharm (Python-focused)
-- WebStorm (JavaScript-focused)
-- Sublime Text
-- Atom
-- Vim/Neovim (advanced users)
-
-## Account Setup
-
-### 1. GitHub Account
-
-Required for Lab 1 (GitHub MCP integration).
-
-#### Create Account
-1. Go to [github.com](https://github.com/)
-2. Click "Sign up"
-3. Follow registration process
-4. Verify your email
-
-#### Configure SSH (Optional but Recommended)
-```bash
-# Generate SSH key
-ssh-keygen -t ed25519 -C "your.email@example.com"
-
-# Start SSH agent
-eval "$(ssh-agent -s)"
-
-# Add key to agent
-ssh-add ~/.ssh/id_ed25519
-
-# Copy public key to your clipboard
-cat ~/.ssh/id_ed25519.pub | pbcopy
-
-# Add to GitHub:
-# 1. Go to GitHub Settings > SSH and GPG keys
-# 2. Click "New SSH key"
-# 3. Paste your public key
-# 4. Save
-```
-
-#### Verify SSH Connection
-```bash
-ssh -T git@github.com
-# Should output: Hi username! You've successfully authenticated...
-```
-
-### 2. Bob Account
-
-Ensure your Bob account is properly configured.
-
-#### Setup Steps
-1. **Create Account** (if needed)
-   - Visit Bob registration page
-   - Complete sign-up process
-   - Verify email
-
-2. **Configure Profile**
-   - Set display name
-   - Configure preferences
-   - Set up workspace
-
-3. **Connect Services**
-   - Link GitHub account (for MCP)
-   - Configure integrations
-   - Test connections
-
-### 3. GitHub MCP Server (Optional)
-
-The GitHub MCP server enables Bob to interact with GitHub directly.
-
-#### Setup
-1. **Enable MCP in Bob**
-   - Open Bob settings
-   - Navigate to MCP servers
-   - Search for GitHub MCP Server
-   - Click `Install` and select `Global` scope
-
-2. **GitHub Token**
-   - Navigate to https://github.com/settings/tokens
-   - Click "Generate new token" and select Classic Token
-   - Set Expiration to 7 Days
-   - Select scopes: repo, user
-   - Click "Generate Token" and copy it
-
-3. **Finalize and Test Connection**
-   - Go back to IBM Bob settings
-   - Paste the token in GitHub Personal Access Token Field
-   - Type "https://github.com" GitHub Hostname (optional) Field
-   - Click "Install"
-   - Now activate "Advanced" mode for Bob
-   - Ask Bob: "List my GitHub repositories"
-   - Verify Bob can access your repos
-
-## Verification Steps
-
-Run these commands to verify your setup:
 
 ### Complete Verification Script
 
@@ -350,10 +221,6 @@ npm --version
 
 Write-Host "`nGit:" -ForegroundColor Yellow
 git --version
-
-Write-Host "`nGit Config:" -ForegroundColor Yellow
-git config user.name
-git config user.email
 
 Write-Host "`n=== Verification Complete ===" -ForegroundColor Green
 ```
@@ -375,10 +242,6 @@ npm --version
 echo -e "\nGit:"
 git --version
 
-echo -e "\nGit Config:"
-git config user.name
-git config user.email
-
 echo -e "\n=== Verification Complete ==="
 ```
 
@@ -389,7 +252,6 @@ All commands should return version numbers:
 - ✅ Node.js 14.x.x or higher
 - ✅ NPM 6.x.x or higher
 - ✅ Git 2.x.x or higher
-- ✅ Git user.name and user.email configured
 
 ## Troubleshooting
 
@@ -531,7 +393,7 @@ Once you've completed all setup steps:
 4. ✅ Set up GitHub account and MCP
 5. ✅ Create a test project to verify everything works
 
-**Ready to start?** → [Return to Main README](README.md) → [Start Lab 1](lab1/README.md)
+**Ready to start?** → [Return to Main README](README.md) → [Start Lab 0](lab0/README.md)
 
 ---
 

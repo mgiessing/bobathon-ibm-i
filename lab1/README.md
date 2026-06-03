@@ -18,7 +18,7 @@ A full-stack todo application with:
 ## Learning Objectives
 
 By the end of this lab, you will:
-- ✅ Understand Bob's three modes (Architect, Code, Ask)
+- ✅ Understand Bob's three modes (Plan, Code, Ask)
 - ✅ Use auto-approvals for rapid development
 - ✅ Practice literate coding techniques
 - ✅ Integrate GitHub using MCP servers
@@ -31,7 +31,6 @@ Before starting, ensure you have:
 - [ ] Node.js 14+ installed (for npm)
 - [ ] Git installed and configured
 - [ ] Bob installed and running
-- [ ] Text editor or IDE open
 
 If you haven't completed setup, see [prerequisites.md](../prerequisites.md).
 
@@ -54,7 +53,7 @@ Lab 1 Timeline (45 minutes)
 Bob has three distinct modes, each optimized for different tasks:
 
 > **🎯 Bob Differentiator: [Customizable Modes](../bob-differentiators.md#1--extensible-architecture)**
-> Bob's mode system is one of its key differentiators. Unlike other AI assistants, Bob allows you to create custom modes tailored to your team's specific workflows. The three built-in modes you'll use in this lab are just the beginning—you can create specialized modes for code review, documentation, architecture design, and more. Learn more in [Lab 2 (Lab 4: IBM i MCP)](../lab2/lab4-ibmi-mcp-mode.md) and [Lab 3 (Creating Custom Modes)](../lab3/README.md).
+> Bob's mode system is one of its key differentiators. Unlike other AI assistants, Bob allows you to create custom modes tailored to your team's specific workflows. The three built-in modes you'll use in this lab are just the beginning—you can create specialized modes for code review, documentation, architecture design, and more. Learn more in [Lab 2 (Lab 4: IBM i MCP)](../lab2/lab4-ibmi-mcp-mode.md).
 
 #### 🎯 Plan Mode
 **When to use**: Planning, designing, strategizing
@@ -490,7 +489,7 @@ python
 
 You've successfully completed Lab 1! You've learned to:
 
-- ✅ Use Bob's Architect mode for planning
+- ✅ Use Bob's Plan mode for planning
 - ✅ Use Bob's Code mode for implementation
 - ✅ Enable and use auto-approvals
 - ✅ Apply literate coding principles
@@ -517,7 +516,7 @@ bob-todo-app/
 ## Key Takeaways
 
 ### Bob's Modes
-- **Architect**: Perfect for planning and design decisions
+- **Plan**: Perfect for planning and design decisions
 - **Code**: Best for implementation and file creation
 - **Ask**: Great for learning and understanding
 - **Custom Modes**: Create your own specialized modes ([Learn more](../bob-differentiators.md#customizable-modes))
@@ -548,7 +547,6 @@ Try these improvements:
 
 ### Continue Learning
 - **[Lab 2: IBM i Modernization with Bob →](../lab2/README.md)** - Six hands-on labs exploring IBM i modernization, RPG conversion, UI modernization, SQL refactoring, MCP integration, and Ansible automation
-- **[Lab 3: Creating MCP Servers and Custom Modes →](../lab3/README.md)** - Advanced lab on extending Bob's capabilities through Model Context Protocol (MCP) servers and custom modes
 
 ## Troubleshooting
 

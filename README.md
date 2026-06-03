@@ -8,9 +8,10 @@ Welcome to the Bobathon hands-on labs! This comprehensive training series will t
 
 These labs are designed to give you hands-on experience with Bob's core features through progressive exercises:
 
-1. **Lab 1: Building Applications** - Create a full-stack todo application (45 minutes)
-2. **Lab 2: IBM i Modernization** - Six hands-on labs for IBM i modernization (95 minutes)
-3. **Custom Challenge:** - IBM i specifc; will be discussed in or before a Bobathon (~2 hours)
+1. **Lab 0: Getting Started with Bob** - Familiarize with Bob's core features: **Rules**, **Slash Commands**, and **Skills**. (30 minutes)
+2. **Lab 1: Building Applications** - Create a full-stack todo application (45 minutes)
+3. **Lab 2: IBM i Modernization** - Six hands-on labs for IBM i modernization (95 minutes)
+4. **Custom Challenge:** - IBM i specifc; will be discussed in or before a Bobathon (~2 hours)
 
 **Total Learning Time**: ~4-5 hours
 
@@ -45,7 +46,6 @@ Before starting these labs, ensure you have:
 - **Node.js 14+** - [Download](https://nodejs.org/)
 - **Git 2.x+** - [Download](https://git-scm.com/)
 - **Bob** - [Download](https://bob.ibm.com/download/)
-- **Text Editor/IDE** - VS Code recommended
 
 ### Required Knowledge
 - Basic Python syntax and concepts
@@ -64,7 +64,26 @@ For detailed setup instructions, see [prerequisites.md](prerequisites.md).
 
 ## 📚 Lab Structure
 
-### 🟢 Beginner Track (Labs 1-2)
+### 🟢 Beginner Track (Labs 0-1)
+
+#### Lab 0: Getting Started with Bob (30 minutes)
+**Focus**: Core Features and Customization
+
+Learn Bob's fundamental features through hands-on exploration of rules, slash commands, and skills.
+
+**What You'll Learn**:
+- Rules system for project and personal customization
+- Slash commands for workflow automation
+- Skills for data analysis and extended capabilities
+
+**Bob Features**:
+- ✅ Project and personal rules
+- ✅ Custom slash commands
+- ✅ Advanced mode with MCP
+
+**[Start Lab 0 →](lab0/README.md)**
+
+---
 
 #### Lab 1: Building a Todo Application (45 minutes)
 **Focus**: Creation and Development
@@ -132,12 +151,14 @@ graph TB
 
 ### Recommended Progression
 1. **Complete prerequisites** - Ensure all software is installed
-2. **Lab 1 (Beginner)** - Build foundational understanding
-3. **Lab 2 (Intermediate)** - Learn IBM i modernization (6 sublabs)
-4. **Custom Challenge (Advanced)** - Master advanced techniques
-5. **Review and practice** - Apply to your own projects
+2. **Lab 0 (Beginner)** - Familiarize with Bob
+3. **Lab 1 (Beginner)** - Build foundational understanding
+4. **Lab 2 (Intermediate)** - Learn IBM i modernization (6 sublabs)
+5. **Custom Challenge (Advanced)** - Master advanced techniques
+6. **Review and practice** - Apply to your own projects
 
 ### Time Commitment
+- **Lab 0**: 30 minutes
 - **Lab 1**: 45 minutes
 - **Lab 2**: 95 minutes (6 sublabs: 15+15+15+15+15+20)
 - **Custom Challenge**: ~2 hours
@@ -239,6 +260,7 @@ Ready to begin? Here's how to get started:
 
 Track your progress through the bootcamp:
 
+- [ ] Lab 0: Getting Started with Bob ✅
 - [ ] Lab 1: Building Applications ✅
 - [ ] Lab 2: IBM i Modernization ✅
   - [ ] Lab 2.0: Discover SAMCO Application
@@ -255,7 +277,7 @@ Track your progress through the bootcamp:
 
 ---
 
-**Ready to start your Bob journey? [Begin with Lab 1 →](lab1/README.md)**
+**Ready to start your Bob journey? [Begin with Lab 0 →](lab0/README.md)**
 
 ---
 
