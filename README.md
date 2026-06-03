@@ -134,10 +134,12 @@ Six progressive labs teaching IBM i modernization using Bob AI assistant. Work w
 
 ```mermaid
 graph TB
-    Start[Prerequisites] --> L1[Lab 1: Build App]
+    Start[Prerequisites] --> L0[Lab 0: Exploring Bob]
+    L0 --> L1[Lab 1: Build App]
     L1 --> L2[Lab 2: IBM i Modernization]
     L2 --> L3[Custom Challenge: IBM i]
     
+    L0 -.-> Beginner[Beginner Level]
     L1 -.-> Beginner[Beginner Level]
     L2 -.-> Intermediate[Intermediate Level]
     
@@ -149,7 +151,7 @@ graph TB
 
 ### Recommended Progression
 1. **Complete prerequisites** - Ensure all software is installed
-2. **Lab 0 (Beginner)** - Familiarize with Bob
+2. **Lab 0 (Beginner)** - Exploring Bob
 3. **Lab 1 (Beginner)** - Build foundational understanding
 4. **Lab 2 (Intermediate)** - Learn IBM i modernization (6 sublabs)
 5. **Custom Challenge (Advanced)** - Master advanced techniques
