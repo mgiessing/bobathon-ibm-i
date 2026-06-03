@@ -56,9 +56,7 @@ Before starting these labs, ensure you have:
 - Command line usage
 
 ### Account Setup
-- GitHub account (for Lab 1)
 - Bob account configured
-- GitHub MCP server connected (optional but recommended)
 
 For detailed setup instructions, see [prerequisites.md](prerequisites.md).
 
