@@ -142,6 +142,7 @@ graph TB
     L0 -.-> Beginner[Beginner Level]
     L1 -.-> Beginner[Beginner Level]
     L2 -.-> Intermediate[Intermediate Level]
+    L3 -.-> Advanced[Advanced Level]
     
     style Start fill:#e1f5ff
     style L1 fill:#e1f5ff
