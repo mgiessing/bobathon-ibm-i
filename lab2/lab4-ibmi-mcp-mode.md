@@ -37,17 +37,13 @@ An IBM i VM is necessary for this lab, with 8076 port open for Mapepire server (
 
 ### How to start the mapepire service on IBM i used by MCP ? 
 
-Follow these [instructions](https://ibm-d95bab6e.mintlify.app/setup-mapepire#option-1-rpm-installation-recommended) and don't be scared.
-In a nutshell: 
-1. connect to your IBM i with [Access Client Solution](https://www.ibm.com/support/pages/ibm-i-access-client-solutions) (5250 emulator) and your user profile.
-2. start SSH using the CL command `STRTCPSVR *SSHD` , 
-3. Connect via SSH and execute the installation commands.
+1. Connect via SSH and execute the installation commands.
 
 > **Note:** On PowerVS, you must use the provided private SSH key.
 
 ```bash
 chmod 600 PATH/TO/pem_user_privatekey_download.pem
-ssh -i PATH/TO/pem_user_privatekey_download.pem cecuser@<IBMi_IP_ADDRESS>
+ssh -i PATH/TO/pem_user_privatekey_download.pem <USER>@<IBMi_IP_ADDRESS>
 ```
 
 ### Install and start mapepire
@@ -74,10 +70,10 @@ ssh -i PATH/TO/pem_user_privatekey_download.pem \
 -L 8076:localhost:8076 \
 -o ServerAliveInterval=15 \
 -o ServerAliveCountMax=3 \
-cecuser@<IBMi_IP_ADDRESS>
+<USER>@<IBMi_IP_ADDRESS>
 ```
 
-Note that in the command above, port 8076 is the default **mapepire** port. If you have changed it, please update it accordingly. Replace `<myIPaddress>` with your IBM i IP address.
+Note that in the command above, port 8076 is the default **mapepire** port. If you have changed it, please update it accordingly. Replace `<USER>` and `<IBMi_IP_ADDRESS>` with your IBM i LPAR details.
 
 #### Option B: _On-Premise_ IBM i (TechZone LPAR)
 
@@ -88,7 +84,7 @@ Note that in the command above, port 8076 is the default **mapepire** port. If y
 
 ### Step 1: Open project
 
-Create a new directory on your laptop, Open up this new folder in a new Bob window, this is the participant working directory.
+Open up this folder (`lab2`) in a new Bob window making it your root directory.
 
 ### Step 2: Configure IBM i Connection
 
@@ -101,12 +97,12 @@ Since you are using an SSH tunnel, point to `localhost`:
 ```bash
 # .env file
 DB2i_HOST=localhost
-DB2i_USER=cecuser
+DB2i_USER=youruser
 DB2i_PASS=yourpassword
 DB2i_PORT=8076
 ```
 
-Replace `yourpassword` by the corresponding value.
+Replace `youruser` and `yourpassword` by the corresponding value.
 
 #### Option B: Using On-Premise IBM i Base image
 
@@ -115,12 +111,12 @@ Use the hostname or IP address of your system:
 ```bash
 # .env file
 DB2i_HOST=your-ibmi-hostname.com
-DB2i_USER=cecuser
+DB2i_USER=youruser
 DB2i_PASS=yourpassword
 DB2i_PORT=8076
 ```
 
-Replace `yourpassword` by the corresponding value.
+Replace `youruser` and `yourpassword` by the corresponding value.
 
 **Important**: For both options add `.env` to `.gitignore`:
 
